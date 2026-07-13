@@ -19,17 +19,17 @@
         }
     </script>
 </head>
-<body class="font-sans bg-[#FAFAF6] dark:bg-[#1A1A1A] text-[#2D3A2D] dark:text-[#E0E0E0] transition-colors duration-300">
+<body class="font-['Pretendard'] bg-[#FAFAF6] dark:bg-[#1A1A1A] text-[#2D3A2D] dark:text-[#E0E0E0] transition-colors duration-300">
 
     <div id="custom-cursor" class="fixed top-0 left-0 w-[30px] h-[30px] pointer-events-none z-[9999] transition-transform duration-[0.05s] ease-linear"></div>
 
     <nav class="sticky top-0 z-50 bg-white/80 dark:bg-[#1A1A1A]/80 backdrop-blur-md border-b border-[#E2E6E1] dark:border-[#333]">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-xl font-bold tracking-tight">박연주</a>
+            <a href="index.html" class="text-xl font-bold tracking-tight">박연주</a>
             <div class="flex items-center space-x-6">
                 <div class="hidden md:flex space-x-8">
-                    <a href="index.html" class="nav-link text-primary dark:text-secondary font-semibold border-b-2 border-primary dark:border-secondary" data-page="index">About Me</a>
-                    <a href="strengths.html" class="nav-link text-[#5D7A55]/70 dark:text-[#A8C69F]/70 hover:text-primary dark:hover:text-secondary transition-colors" data-page="strengths">My Strengths</a>
+                    <a href="index.html" class="nav-link text-[#5D7A55]/70 dark:text-[#A8C69F]/70 hover:text-primary dark:hover:text-secondary transition-colors" data-page="index">About Me</a>
+                    <a href="strengths.html" class="nav-link text-primary dark:text-secondary font-semibold border-b-2 border-primary dark:border-secondary" data-page="strengths">My Strengths</a>
                     <a href="taste.html" class="nav-link text-[#5D7A55]/70 dark:text-[#A8C69F]/70 hover:text-primary dark:hover:text-secondary transition-colors" data-page="taste">Life & Taste</a>
                 </div>
                 <button id="theme-toggle" class="p-2 rounded-full bg-gray-100 dark:bg-[#333] transition-all">🌙</button>
@@ -38,22 +38,54 @@
     </nav>
 
     <header class="min-h-[30vh] flex flex-col justify-center items-center px-8 pt-20 pb-10 text-center">
-        <h1 class="text-5xl md:text-6xl font-bold mb-8">My Strengths</h1>
+        <p class="inline-block px-4 py-2 rounded-full bg-[#5D7A55]/10 text-primary dark:text-secondary text-sm font-medium mb-4">What I bring to the table</p>
+        <h1 class="text-5xl md:text-6xl font-bold mb-4">My Strengths</h1>
+        <p class="text-lg text-[#5D7A55]/80 dark:text-[#A8C69F]/80 max-w-2xl">복잡한 문제를 정리하고, 꾸준히 배우며, 함께 일하는 흐름을 자연스럽게 만드는 사람입니다.</p>
     </header>
 
-    <section class="py-20 px-8">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <!-- Tailwind 전용 호버 효과 적용 -->
-            <div class="group p-10 rounded-[2rem] bg-secondary/20 dark:bg-secondary/10 border border-black/5 dark:border-white/10 cursor-pointer text-center transition-all duration-400 ease-out hover:-translate-y-2 hover:bg-primary hover:shadow-xl hover:shadow-primary/30">
-                <h3 class="text-xl font-bold text-primary dark:text-secondary group-hover:text-white transition-colors duration-300">안정적인 구조 설계</h3>
+    <section class="py-16 px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group bg-white dark:bg-[#252525] p-8 rounded-[2rem] border border-black/5 dark:border-white/10 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+                    <div class="text-4xl mb-4">🧠</div>
+                    <h3 class="text-xl font-bold mb-3 text-primary dark:text-secondary">구조를 보는 힘</h3>
+                    <p class="text-[#2D3A2D]/80 dark:text-[#E0E0E0]/80 leading-relaxed">문제를 단순히 접하는 것이 아니라, 핵심을 분해하고 흐름을 설계해 안정적인 방향으로 이끌어가는 능력이 있습니다.</p>
+                </div>
+
+                <div class="group bg-white dark:bg-[#252525] p-8 rounded-[2rem] border border-black/5 dark:border-white/10 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+                    <div class="text-4xl mb-4">🔍</div>
+                    <h3 class="text-xl font-bold mb-3 text-primary dark:text-secondary">꾸준한 학습력</h3>
+                    <p class="text-[#2D3A2D]/80 dark:text-[#E0E0E0]/80 leading-relaxed">새로운 지식과 도구를 빠르게 습득하는 것뿐 아니라, 한 번 배운 것은 깊이 있게 이해하고 적용하는 태도를 갖고 있습니다.</p>
+                </div>
+
+                <div class="group bg-white dark:bg-[#252525] p-8 rounded-[2rem] border border-black/5 dark:border-white/10 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+                    <div class="text-4xl mb-4">🤝</div>
+                    <h3 class="text-xl font-bold mb-3 text-primary dark:text-secondary">협업의 자연스러움</h3>
+                    <p class="text-[#2D3A2D]/80 dark:text-[#E0E0E0]/80 leading-relaxed">다른 사람의 의견을 존중하고, 팀의 흐름 속에서 조용하지만 확실하게 역할을 해내는 타입입니다.</p>
+                </div>
             </div>
-            
-            <div class="group p-10 rounded-[2rem] bg-secondary/20 dark:bg-secondary/10 border border-black/5 dark:border-white/10 cursor-pointer text-center transition-all duration-400 ease-out hover:-translate-y-2 hover:bg-primary hover:shadow-xl hover:shadow-primary/30">
-                <h3 class="text-xl font-bold text-primary dark:text-secondary group-hover:text-white transition-colors duration-300">끊임없는 연구 정신</h3>
-            </div>
-            
-            <div class="group p-10 rounded-[2rem] bg-secondary/20 dark:bg-secondary/10 border border-black/5 dark:border-white/10 cursor-pointer text-center transition-all duration-400 ease-out hover:-translate-y-2 hover:bg-primary hover:shadow-xl hover:shadow-primary/30">
-                <h3 class="text-xl font-bold text-primary dark:text-secondary group-hover:text-white transition-colors duration-300">협업 마인드</h3>
+
+            <div class="mt-16 grid grid-cols-1 xl:grid-cols-[1.2fr_0.8fr] gap-8">
+                <div class="bg-gradient-to-br from-[#5D7A55] to-[#7A9B72] text-white p-10 rounded-[2rem] shadow-lg shadow-primary/20">
+                    <p class="text-sm uppercase tracking-[0.3em] opacity-80 mb-3">What makes me reliable</p>
+                    <h3 class="text-2xl md:text-3xl font-bold mb-5">작은 디테일도 놓치지 않는 사람</h3>
+                    <p class="text-white/90 leading-relaxed mb-6">단순히 결과만 빠르게 내는 것이 아니라, 그 결과가 오래 쓰일 수 있도록 구조와 흐름까지 함께 생각합니다. 그래서 협업과 유지보수 모두에서 무게감 있게 작동할 수 있는 스타일입니다.</p>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 rounded-full bg-white/15 text-sm">빠른 적응력</span>
+                        <span class="px-4 py-2 rounded-full bg-white/15 text-sm">책임감 있는 실행</span>
+                        <span class="px-4 py-2 rounded-full bg-white/15 text-sm">디테일한 완성도</span>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-[#252525] p-8 rounded-[2rem] border border-black/5 dark:border-white/10">
+                    <h3 class="text-xl font-bold mb-6 text-primary dark:text-secondary">이런 상황에서 특히 강합니다</h3>
+                    <ul class="space-y-4 text-[#2D3A2D]/80 dark:text-[#E0E0E0]/80">
+                        <li class="flex items-start gap-3"><span class="text-primary dark:text-secondary text-lg">•</span><span>새로운 기술이나 흐름을 빠르게 이해하고 적용해야 할 때</span></li>
+                        <li class="flex items-start gap-3"><span class="text-primary dark:text-secondary text-lg">•</span><span>복잡한 요구사항을 정리해서 명확한 방향으로 바꿔야 할 때</span></li>
+                        <li class="flex items-start gap-3"><span class="text-primary dark:text-secondary text-lg">•</span><span>팀원과 함께 더 나은 결과를 만들어가야 할 때</span></li>
+                        <li class="flex items-start gap-3"><span class="text-primary dark:text-secondary text-lg">•</span><span>완성도 높은 결과물을 오래 유지해나가야 할 때</span></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
