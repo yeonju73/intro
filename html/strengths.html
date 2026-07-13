@@ -19,7 +19,10 @@
         }
     </script>
 </head>
-<body class="font-['Pretendard'] bg-[#FAFAF6] dark:bg-[#1A1A1A] text-[#2D3A2D] dark:text-[#E0E0E0] transition-colors duration-300">
+<body class="font-['Pretendard'] bg-[#FAFAF6] dark:bg-[#1A1A1A] text-[#2D3A2D] dark:text-[#E0E0E0] transition-colors duration-300 relative overflow-x-hidden">
+    <div class="fixed inset-0 -z-10 overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(93,122,85,0.2)_0%,_rgba(168,198,159,0.12)_40%,_transparent_80%)] dark:bg-[radial-gradient(circle_at_center,_rgba(93,122,85,0.28)_0%,_rgba(168,198,159,0.16)_40%,_transparent_80%)]"></div>
+    </div>
 
     <div id="custom-cursor" class="fixed top-0 left-0 w-[30px] h-[30px] pointer-events-none z-[9999] transition-transform duration-[0.05s] ease-linear"></div>
 
