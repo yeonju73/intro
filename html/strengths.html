@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Strengths | 박연주</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5D7A55',
+                        secondary: '#A8C69F',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-[#FAFAF6] dark:bg-[#1A1A1A] text-[#2D3A2D] dark:text-[#E0E0E0] transition-colors duration-300">
+
+    <div id="custom-cursor" class="fixed top-0 left-0 w-[30px] h-[30px] pointer-events-none z-[9999] transition-transform duration-[0.05s] ease-linear"></div>
+
+    <nav class="sticky top-0 z-50 bg-white/80 dark:bg-[#1A1A1A]/80 backdrop-blur-md border-b border-[#E2E6E1] dark:border-[#333]">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-tight">박연주</a>
+            <div class="flex items-center space-x-6">
+                <div class="hidden md:flex space-x-8">
+                    <a href="about.html" class="nav-link text-primary dark:text-secondary font-semibold border-b-2 border-primary dark:border-secondary" data-page="about">About Me</a>
+                    <a href="strengths.html" class="nav-link text-[#5D7A55]/70 dark:text-[#A8C69F]/70 hover:text-primary dark:hover:text-secondary transition-colors" data-page="strengths">My Strengths</a>
+                    <a href="taste.html" class="nav-link text-[#5D7A55]/70 dark:text-[#A8C69F]/70 hover:text-primary dark:hover:text-secondary transition-colors" data-page="taste">Life & Taste</a>
+                </div>
+                <button id="theme-toggle" class="p-2 rounded-full bg-gray-100 dark:bg-[#333] transition-all">🌙</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="min-h-[30vh] flex flex-col justify-center items-center px-8 pt-20 pb-10 text-center">
+        <h1 class="text-5xl md:text-6xl font-bold mb-8">My Strengths</h1>
+    </header>
+
+    <section class="py-20 px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <!-- Tailwind 전용 호버 효과 적용 -->
+            <div class="group p-10 rounded-[2rem] bg-secondary/20 dark:bg-secondary/10 border border-black/5 dark:border-white/10 cursor-pointer text-center transition-all duration-400 ease-out hover:-translate-y-2 hover:bg-primary hover:shadow-xl hover:shadow-primary/30">
+                <h3 class="text-xl font-bold text-primary dark:text-secondary group-hover:text-white transition-colors duration-300">안정적인 구조 설계</h3>
+            </div>
+            
+            <div class="group p-10 rounded-[2rem] bg-secondary/20 dark:bg-secondary/10 border border-black/5 dark:border-white/10 cursor-pointer text-center transition-all duration-400 ease-out hover:-translate-y-2 hover:bg-primary hover:shadow-xl hover:shadow-primary/30">
+                <h3 class="text-xl font-bold text-primary dark:text-secondary group-hover:text-white transition-colors duration-300">끊임없는 연구 정신</h3>
+            </div>
+            
+            <div class="group p-10 rounded-[2rem] bg-secondary/20 dark:bg-secondary/10 border border-black/5 dark:border-white/10 cursor-pointer text-center transition-all duration-400 ease-out hover:-translate-y-2 hover:bg-primary hover:shadow-xl hover:shadow-primary/30">
+                <h3 class="text-xl font-bold text-primary dark:text-secondary group-hover:text-white transition-colors duration-300">협업 마인드</h3>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

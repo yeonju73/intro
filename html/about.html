@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박연주 | 백엔드 개발자</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5D7A55',
+                        secondary: '#A8C69F',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-['Pretendard'] bg-[#FAFAF6] dark:bg-[#1A1A1A] text-[#2D3A2D] dark:text-[#E0E0E0] transition-colors duration-300">
+
+    <div id="custom-cursor" class="fixed top-0 left-0 w-[30px] h-[30px] pointer-events-none z-[9999] transition-transform duration-[0.05s] ease-linear"></div>
+    <div class="fixed inset-0 pointer-events-none opacity-[0.05] dark:opacity-[0.1] z-[-1]" style="background-image: url('https://grainy-gradients.vercel.app/noise.svg');"></div>
+
+    <nav class="sticky top-0 z-50 bg-white/80 dark:bg-[#1A1A1A]/80 backdrop-blur-md border-b border-[#E2E6E1] dark:border-[#333]">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="about.html" class="text-xl font-bold tracking-tight">박연주</a>
+            <div class="flex items-center space-x-6">
+                <div class="hidden md:flex space-x-8">
+                    <a href="about.html" class="nav-link text-primary dark:text-secondary font-semibold border-b-2 border-primary dark:border-secondary" data-page="about">About Me</a>
+                    <a href="strengths.html" class="nav-link text-[#5D7A55]/70 dark:text-[#A8C69F]/70 hover:text-primary dark:hover:text-secondary transition-colors" data-page="strengths">My Strengths</a>
+                    <a href="taste.html" class="nav-link text-[#5D7A55]/70 dark:text-[#A8C69F]/70 hover:text-primary dark:hover:text-secondary transition-colors" data-page="taste">Life & Taste</a>
+                </div>
+                <button id="theme-toggle" class="p-2 rounded-full bg-gray-100 dark:bg-[#333] transition-all">🌙</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="min-h-[40vh] flex flex-col justify-center items-center px-8 pt-20 pb-10 text-center">
+        <h2 class="text-xl font-medium text-primary dark:text-secondary mb-6 tracking-[0.2em] uppercase">Back-end Developer</h2>
+        <h1 class="text-7xl md:text-8xl font-bold mb-8">박연주</h1>
+    </header>
+
+    <section class="py-5 px-8">
+        <!-- 기존 hover-card 기능을 Tailwind 클래스로 전환 -->
+        <div class="max-w-4xl mx-auto bg-white dark:bg-[#252525] p-16 rounded-[2.5rem] border border-black/5 dark:border-white/10 transition-all duration-500 hover:shadow-[0_20px_30px_-10px_rgba(93,122,85,0.3)] flex flex-col md:flex-row items-center gap-12">
+            <div class="w-48 h-48 bg-gray-200 dark:bg-[#333] rounded-3xl flex-shrink-0">
+                <img src="profile.png" alt="Profile" class="w-full h-full object-cover">
+            </div>
+            <div>
+                <h2 class="text-2xl font-bold mb-6">About Me</h2>
+                <p class="text-lg opacity-80 leading-relaxed mb-6">안녕하세요, 박연주입니다. 주로 백엔드 개발을 해왔으며, 현재 금융권 IT 분야를 목표로 전문성을 쌓아가고 있습니다. 기술적 고민을 즐기는 동료가 되겠습니다.</p>
+                <!-- 추가된 리스트 항목 -->
+                <ul class="text-lg opacity-80 space-y-2">
+                    <li class="flex items-center">
+                        <span class="w-20 font-semibold opacity-60">MBTI</span>
+                        <span>ISTP</span>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="w-20 font-semibold opacity-60">거주지</span>
+                        <span>서울 중랑구</span>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="w-20 font-semibold opacity-60">취미</span>
+                        <span>영화보기, 카페가기</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-20 text-center fade-in">
+        <a href="https://github.com/yeonju73" target="_blank" class="inline-block px-10 py-5 bg-[#2D3A2D] text-white rounded-full hover:bg-[#5D7A55] transition-all font-semibold">
+            GitHub 프로필 확인하기
+        </a>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

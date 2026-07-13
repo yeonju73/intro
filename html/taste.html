@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life & Taste | 박연주</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5D7A55',
+                        secondary: '#A8C69F',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-['Pretendard'] bg-[#FAFAF6] dark:bg-[#1A1A1A] text-[#2D3A2D] dark:text-[#E0E0E0] transition-colors duration-300">
+    <div id="custom-cursor" class="fixed top-0 left-0 w-[30px] h-[30px] pointer-events-none z-[9999] transition-transform duration-[0.05s] ease-linear"></div>
+
+    <div class="fixed inset-0 pointer-events-none opacity-[0.05] dark:opacity-[0.1] z-[-1]" style="background-image: url('https://grainy-gradients.vercel.app/noise.svg');"></div>
+
+    <nav class="sticky top-0 z-50 bg-white/80 dark:bg-[#1A1A1A]/80 backdrop-blur-md border-b border-[#E2E6E1] dark:border-[#333]">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="about.html" class="text-xl font-bold tracking-tight">박연주</a>
+            <div class="flex items-center space-x-6">
+                <div class="hidden md:flex space-x-8">
+                    <a href="about.html" class="nav-link text-[#5D7A55]/70 dark:text-[#A8C69F]/70 hover:text-primary dark:hover:text-secondary transition-colors" data-page="about">About Me</a>
+                    <a href="strengths.html" class="nav-link text-[#5D7A55]/70 dark:text-[#A8C69F]/70 hover:text-primary dark:hover:text-secondary transition-colors" data-page="strengths">My Strengths</a>
+                    <a href="taste.html" class="nav-link text-primary dark:text-secondary font-semibold border-b-2 border-primary dark:border-secondary" data-page="taste">Life & Taste</a>
+                </div>
+                <button id="theme-toggle" class="p-2 rounded-full bg-gray-100 dark:bg-[#333] transition-all">🌙</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="min-h-[30vh] flex flex-col justify-center items-center px-8 pt-20 pb-10 text-center">
+        <h1 class="text-5xl md:text-6xl font-bold mb-8">Life & Taste</h1>
+    </header>
+
+    <section class="py-16 px-8">
+        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white dark:bg-[#252525] p-8 rounded-[2rem] border border-black/5 dark:border-white/10 hover:shadow-md transition-all">
+                <div class="text-4xl mb-4">☕</div>
+                <h3 class="font-bold text-lg mb-2">Fuel (업무 에너지)</h3>
+                <p class="opacity-80">커피 한 잔은 저에게 가장 확실한 코드 작성 준비물입니다.</p>
+            </div>
+            <div class="bg-white dark:bg-[#252525] p-8 rounded-[2rem] border border-black/5 dark:border-white/10 hover:shadow-md transition-all">
+                <div class="text-4xl mb-4">🌶️</div>
+                <h3 class="font-bold text-lg mb-2">Focus (몰입의 순간)</h3>
+                <p class="opacity-80">맛있는 음식을 즐깁니다. 마라탕, 불닭볶음면, 엽떡처럼 강렬한 매운맛을 좋아합니다.</p>
+            </div>
+            <div class="bg-white dark:bg-[#252525] p-8 rounded-[2rem] border border-black/5 dark:border-white/10 hover:shadow-md transition-all">
+                <div class="text-4xl mb-4">🎵</div>
+                <h3 class="font-bold text-lg mb-2">Routine (나의 일상)</h3>
+                <p class="opacity-80">좋은 음악과 함께 산책을 할 때가 가장 행복합니다</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
